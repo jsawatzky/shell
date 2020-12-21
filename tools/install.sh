@@ -119,8 +119,7 @@ main() {
 
 	clone_repo
 	intall_powerline
-	~/.jacob-zsh-custom/themes/setup_themes.sh
-	~/.jacob-zsh-custom/plugins/setup_plugins.sh
+	install_oh_my_zsh
 	setup_zshrc
 
 	printf "$GREEN"
