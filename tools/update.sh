@@ -60,7 +60,7 @@ if git pull --rebase --stat origin master; then
   else
   	printf "${YELLOW}%s${RESET}\n" "Could not update themes and plugins. Try again later?"
   fi
-
+else
   ret=$?
   printf "${RED}%s${RESET}\n" 'There was an error updating. Try again later?'
 fi
