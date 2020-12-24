@@ -9,6 +9,7 @@ if command -v "thefuck" >/dev/null 2>&1 ; then
 	eval $(thefuck --alias FUCK)
 fi
 
-update_custom_zsh() {
+update-custom-zsh() {
 	$ZSH_CUSTOM/tools/update.sh
+	refresh-shell
 }

@@ -53,7 +53,14 @@ if git pull --rebase --stat origin master; then
       printf "${BLUE}- ${DIM}%s${RESET}" "$change"
     done
   fi
-else
+
+  printf "${BLUE}%s${RESET}\n" "Updating themes and plugins"
+  if git submodule update --remote; then
+  	printf "${GREEN}%s${RESET}\n" "Themes and plugins are up to date"
+  else
+  	printf "${YELLOW}%s${RESET}\n" "Could not update themes and plugins. Try again later?"
+  fi
+
   ret=$?
   printf "${RED}%s${RESET}\n" 'There was an error updating. Try again later?'
 fi
