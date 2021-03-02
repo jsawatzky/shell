@@ -1,6 +1,6 @@
 # oh-my-zsh options
 ZSH_THEME="spaceship"
-plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker)
+plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker docker-compose)
 
 # Theme options
 SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=true
